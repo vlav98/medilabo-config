@@ -19,5 +19,5 @@ patients:
   uri: lb://patients
 notes:
   uri: lb://notes
-medilabo-risk-report:
-  uri: lb://medilabo-risk-report
+risk-report:
+  uri: lb://risk-report
