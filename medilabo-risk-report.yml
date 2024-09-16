@@ -7,7 +7,7 @@ management:
         include: *
 eureka:
   instance:
-    hostname: localhost
+    hostname: ${IPADDRESS:localhost}
     lease-expiration-duration-in-seconds: 30
     lease-renewal-interval-in-seconds: 10
   client:
@@ -15,6 +15,6 @@ eureka:
       defaultZone: http://${eureka.instance.hostname}:8761/eureka/
 
 patients:
-  uri: http://localhost:8090
+  uri: http://${IPADDRESS:localhost}:8090
 notes:
-  uri: http://localhost:8091
+  uri: http://${IPADDRESS:localhost}:8091
